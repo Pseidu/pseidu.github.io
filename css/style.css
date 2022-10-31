@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 :root {
-  --bg: #000020;
-  --font-color:#f2dfa0;
+  --dark-blue: #000020;
+  --vanilla:#f2dfa0;
   --button-nav: #030303;
   --purple: #755CDE;
   --button-hero: #EB7565;
@@ -25,14 +25,37 @@ body {
   justify-content: space-between;
   font-family: "Philosopher", sans-serif;
   font-size: 18px;
-  color: var(--font-color);
-  background-color: var(--bg);
+  color: var(--vanilla);
+  background-color: var(--dark-blue);
 }
 
-header, footer {
+.top-bottom-banner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--font-color);
-  padding: 0.5rem;
+  background-color: var(--vanilla);
+  padding: 0.5rem 6rem;
+  color: var(--dark-blue);
+}
+.top-bottom-banner a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.75rem;
+}
+
+main .presentation {
+  display: flex;
+  text-align: center;
+  padding: 0.5rem 6rem;
+}
+main .presentation p {
+  color: white;
+}
+main .presentation .explanation {
+  padding: 3rem 3rem 0;
+  font-size: 1.3rem;
+}
+main .presentation img {
+  max-width: 400px;
+  border-radius: 100px;
 }/*# sourceMappingURL=style.css.map */
