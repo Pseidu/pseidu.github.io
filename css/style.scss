@@ -2,16 +2,18 @@
 
 :root {
   --dark-blue: #000020;
-  --vanilla:#f2dfa0;
-  --button-nav: #030303;
-  --purple: #755CDE;
+  --vanilla: #f2dfa0;
+  --sea-blue: #083391;
+  /*--button-nav: #030303;
+  /*
   --button-hero: #EB7565;
   --orange: #F6A560;
   --pinkie: #F39E9E;
   --blue-med: #61C4B7;
   --dark-red: #552049;
-  --medium-brown: #7A746E;
+  --medium-brown: #7A746E;*/
 }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -20,7 +22,7 @@
 
 body {
   min-height: 100vh;
-  
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -29,27 +31,31 @@ body {
     family: 'Philosopher', sans-serif;
     size: 18px;
   }
+
   color: var(--vanilla);
   background-color: var(--dark-blue);
 }
 
 .top-bottom-banner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-    background-color: var(--vanilla);
-    padding: 0.5rem 6rem;
+  background-color: var(--vanilla);
+  padding: 0.5rem 6rem;
 
-    color: var(--dark-blue);
-    a {
-      text-decoration: none;
-      color: inherit;
-      font-size: 1.75rem;
-    }
+  color: var(--dark-blue);
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.75rem;
+  }
 }
 
 main {
+  overflow-x: hidden;
+
   .presentation {
     display: flex;
     align-items: center;
@@ -57,16 +63,68 @@ main {
     text-align: center;
     padding: 0.5rem 6rem;
 
-    p{
+    p {
       color: white;
     }
+
     .explanation {
       padding: 3rem 3rem 0;
       font-size: 1.3rem;
     }
+
     img {
       max-width: 400px;
       border-radius: 100px;
     }
+  }
+
+  .carousel {
+    display: flex;
+    flex-direction: column;
+    margin-top: 64px;
+    margin-bottom: 64px;
+
+    h1 {
+      text-align: center;
+    }
+
+    .slides {
+      display: flex;
+      justify-content: center;
+      column-gap: 15px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      margin-top: 16px;
+      margin-bottom: 16px;
+      background-color: var(--sea-blue);
+
+      img {
+        border-radius: 10px;
+        width: 270px;
+      }
+    }
+
+
+    .prev-next {
+      text-align: center;
+
+      button {
+        width: 64px;
+        height: 64px;
+        background-color: var(--dark-blue);
+        border: 5px solid var(--vanilla);
+        border-radius: 50%;
+        //border: none;
+        cursor: pointer;
+        margin: 0 8px;
+
+        &:hover {
+          background-color: var(--sea-blue);
+        }
+      }
+    }
+
+
+
   }
 }

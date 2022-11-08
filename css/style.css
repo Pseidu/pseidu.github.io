@@ -1,15 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 :root {
   --dark-blue: #000020;
-  --vanilla:#f2dfa0;
-  --button-nav: #030303;
-  --purple: #755CDE;
+  --vanilla: #f2dfa0;
+  --sea-blue: #083391;
+  /*--button-nav: #030303;
+  /*
   --button-hero: #EB7565;
   --orange: #F6A560;
   --pinkie: #F39E9E;
   --blue-med: #61C4B7;
   --dark-red: #552049;
-  --medium-brown: #7A746E;
+  --medium-brown: #7A746E;*/
 }
 
 * {
@@ -43,6 +44,9 @@ body {
   font-size: 1.75rem;
 }
 
+main {
+  overflow-x: hidden;
+}
 main .presentation {
   display: flex;
   align-items: center;
@@ -59,4 +63,43 @@ main .presentation .explanation {
 main .presentation img {
   max-width: 400px;
   border-radius: 100px;
+}
+main .carousel {
+  display: flex;
+  flex-direction: column;
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+main .carousel h1 {
+  text-align: center;
+}
+main .carousel .slides {
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  background-color: var(--sea-blue);
+}
+main .carousel .slides img {
+  border-radius: 10px;
+  width: 270px;
+}
+main .carousel .prev-next {
+  text-align: center;
+}
+main .carousel .prev-next button {
+  width: 64px;
+  height: 64px;
+  background-color: var(--dark-blue);
+  border: 5px solid var(--vanilla);
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0 8px;
+}
+main .carousel .prev-next button:hover {
+  background-color: var(--sea-blue);
 }/*# sourceMappingURL=style.css.map */
