@@ -33,9 +33,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--vanilla);
   padding: 0.5rem 6rem;
   color: var(--dark-blue);
+  background-color: var(--vanilla);
 }
 .top-bottom-banner a {
   text-decoration: none;
@@ -67,6 +67,7 @@ main .presentation img {
 main .carousel {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-top: 64px;
   margin-bottom: 64px;
 }
@@ -87,6 +88,18 @@ main .carousel .slides {
 main .carousel .slides img {
   border-radius: 10px;
   width: 270px;
+}
+main .carousel #project-description {
+  margin-bottom: 16px;
+  padding: 1rem;
+  background-color: white;
+  width: 30%;
+  border-radius: 10px;
+  color: var(--dark-blue);
+  font-size: 0.75rem;
+}
+main .carousel #project-description .imagen1, main .carousel #project-description .imagen2, main .carousel #project-description .imagen3, main .carousel #project-description .imagen5, main .carousel #project-description .imagen6, main .carousel #project-description .imagen7 {
+  display: none;
 }
 main .carousel .prev-next {
   text-align: center;
