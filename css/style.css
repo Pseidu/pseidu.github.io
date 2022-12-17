@@ -56,7 +56,7 @@ main .presentation p {
   color: white;
 }
 main .presentation .explanation {
-  padding: 3rem 3rem 0;
+  padding: 1rem 3rem 0;
   font-size: 1.3rem;
   text-align: justify;
 }
