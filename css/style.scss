@@ -28,7 +28,7 @@ body {
 
   font: {
     family: 'Philosopher', sans-serif;
-    size: 18px;
+    size: 16px;
   }
 
   color: var(--vanilla);
@@ -48,7 +48,10 @@ body {
   a {
     text-decoration: none;
     color: inherit;
-    font-size: 1.75rem;
+    font-weight: bold;
+    img {
+      height: 24px;
+    }
   }
 }
 
@@ -114,7 +117,8 @@ main {
       color: var(--dark-blue);
       font-size: 0.75rem;
 
-      .imagen1, .imagen2, .imagen3, .imagen5, .imagen6, .imagen7 {
+      .imagen1, .imagen2, .imagen3, .imagen4, .imagen5,
+      .imagen7, .imagen8, .imagen9, .imagen10, .imagen11 {
         display: none;
       }
     }

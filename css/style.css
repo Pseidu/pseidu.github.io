@@ -24,7 +24,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   font-family: "Philosopher", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   color: var(--vanilla);
   background-color: var(--dark-blue);
 }
@@ -40,7 +40,10 @@ body {
 .top-bottom-banner a {
   text-decoration: none;
   color: inherit;
-  font-size: 1.75rem;
+  font-weight: bold;
+}
+.top-bottom-banner a img {
+  height: 24px;
 }
 
 main {
@@ -98,7 +101,8 @@ main .carousel #project-description {
   color: var(--dark-blue);
   font-size: 0.75rem;
 }
-main .carousel #project-description .imagen1, main .carousel #project-description .imagen2, main .carousel #project-description .imagen3, main .carousel #project-description .imagen5, main .carousel #project-description .imagen6, main .carousel #project-description .imagen7 {
+main .carousel #project-description .imagen1, main .carousel #project-description .imagen2, main .carousel #project-description .imagen3, main .carousel #project-description .imagen4, main .carousel #project-description .imagen5,
+main .carousel #project-description .imagen7, main .carousel #project-description .imagen8, main .carousel #project-description .imagen9, main .carousel #project-description .imagen10, main .carousel #project-description .imagen11 {
   display: none;
 }
 main .carousel .prev-next {
