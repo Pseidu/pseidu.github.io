@@ -33,7 +33,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 6rem;
+  padding: 0.5rem 4rem;
   color: var(--dark-blue);
   background-color: var(--vanilla);
 }
@@ -53,7 +53,7 @@ main .presentation {
   display: flex;
   align-items: center;
   text-align: center;
-  padding: 3rem 6rem;
+  padding: 3rem 2rem;
 }
 main .presentation p {
   color: white;
@@ -96,13 +96,21 @@ main .carousel #project-description {
   margin-bottom: 16px;
   padding: 1rem;
   background-color: white;
-  width: 30%;
+  width: 40%;
   border-radius: 10px;
   color: var(--dark-blue);
   font-size: 0.75rem;
 }
-main .carousel #project-description .imagen1, main .carousel #project-description .imagen2, main .carousel #project-description .imagen3, main .carousel #project-description .imagen4, main .carousel #project-description .imagen5,
-main .carousel #project-description .imagen7, main .carousel #project-description .imagen8, main .carousel #project-description .imagen9, main .carousel #project-description .imagen10, main .carousel #project-description .imagen11 {
+main .carousel #project-description .imagen1,
+main .carousel #project-description .imagen2,
+main .carousel #project-description .imagen3,
+main .carousel #project-description .imagen4,
+main .carousel #project-description .imagen5,
+main .carousel #project-description .imagen7,
+main .carousel #project-description .imagen8,
+main .carousel #project-description .imagen9,
+main .carousel #project-description .imagen10,
+main .carousel #project-description .imagen11 {
   display: none;
 }
 main .carousel .prev-next {
@@ -119,4 +127,23 @@ main .carousel .prev-next button {
 }
 main .carousel .prev-next button:hover {
   background-color: var(--sea-blue);
+}
+
+/* Media Query: Tablet & Smartphone */
+@media screen and (max-width: 900px) {
+  .top-bottom-banner {
+    padding: 0.5rem 1.5rem;
+  }
+  main .presentation {
+    flex-direction: column;
+  }
+  main .presentation img {
+    width: 99%;
+  }
+  main .presentation .explanation {
+    padding: 1rem 1rem 0;
+  }
+  main .carousel #project-description {
+    width: 80%;
+  }
 }/*# sourceMappingURL=style.css.map */
